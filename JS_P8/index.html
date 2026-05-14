@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>FP Form Validator</title>
+</head>
+<body>
+    <form id="registrationForm" style="max-width: 300px; display: flex; flex-direction: column; gap: 15px;">
+        <h2>Реєстрація</h2>
+
+        <div>
+            <input type="text" id="username" placeholder="Логін (не 'admin')">
+            <div id="usernameErr" style="color: red; font-size: 12px;"></div>
+        </div>
+
+        <div>
+            <input type="text" id="email" placeholder="Email">
+            <div id="emailErr" style="color: red; font-size: 12px;"></div>
+        </div>
+
+        <button type="submit">Відправити</button>
+    </form>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
